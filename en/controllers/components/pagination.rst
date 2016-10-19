@@ -259,6 +259,9 @@ Additional associations can be loaded to the paginated table by using the
 
         $this->set('articles', $this->paginate($this->Articles));
     }
+    
+If you want to use any fields of the assosciated tables for sorting make sure to whitelist the fields in the ``sortWhitelist`` option. 
+
 
 Out of Range Page Requests
 ==========================
